@@ -1,0 +1,13 @@
+./sql.php --from testTable.csv
+
+./sql.php --help me
+
+./sql.php --from testTable.csv --output csv --output-file output.csv --sort-column name --sort-mode alpha --sort-direction desc
+
+./sql.php --from testTable.csv --output screen --sort-column age --sort-mode numeric --sort-direction asc --power-values "id 3" --map-function cutFirstLetter --map-function-column name
+
+./sql.php --from testTable.csv --output screen --power-values "id 3" --uppercase-column name --select id,name --column-sort desc
+
+./sql.php --from testTable.csv --uppercase-column name --aggregate-product age
+
+./sql.php --from testTable.csv --uppercase-column name --aggregate-sum age --column-sort desc
